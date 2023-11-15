@@ -34,6 +34,8 @@ from ..models.solicitudes.solicitud import Solicitud
 
 logger = logging.getLogger(name=__name__)
 
+#
+
     
 def get_query_por_role(queryset, permission, role, user):
             
