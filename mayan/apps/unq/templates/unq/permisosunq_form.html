@@ -1,0 +1,36 @@
+{% extends 'appearance/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<form method="post" action="/unq/permisos/">
+    {% csrf_token %} 
+    {{ form.media.js }}
+
+    {% for field in form %}
+    <div class="form-group">
+        <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+        <br>
+        {{ field }}
+        {{ field.errors }}
+    </div>
+    {% endfor %}
+
+    {% for field in grupos %}
+        <div class="form-group">
+            <label>{{ field.name|title }}</label>
+            <br>
+            {%for field_interno in grupos %}
+                {% if field_interno != field %}
+                    <label><input type="checkbox" name="{{ field.name }}" value="{{ field_interno.name }}">{{ field_interno.name }}</label>
+                {% endif %}
+            {% endfor %}
+        </div>
+    {% endfor %}
+
+    <button type="submit">Enviar</button>
+
+</form>
+
+{% endblock %}

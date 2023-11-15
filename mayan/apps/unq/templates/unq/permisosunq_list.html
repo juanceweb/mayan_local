@@ -1,0 +1,32 @@
+{% extends 'appearance/base.html' %}
+
+
+{% load static %}
+
+
+{% block content %}
+
+<h2>Permisos de Workflow State</h2>
+
+<ul>
+    <!-- Iterate over object_list -->
+    {% for object in object_list %}
+    <!-- Display Objects -->
+    <li>{{ object.workflow }}</li>
+    <li>{{ object.workflow_state }}</li>
+    <table>
+    {% for key,value in object.permisos.items %}
+        <tr>
+            <td>{{key}}</td><td>{{value}}</td>
+        </tr>
+    {% endfor %}
+    </table>
+
+    <hr/>
+    <!-- If object_list is empty  -->
+    {% empty %}
+    <li>No objects yet.</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

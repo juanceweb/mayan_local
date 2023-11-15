@@ -1,0 +1,31 @@
+SETTINGS.PY
+agregar las siguientes apps
+->  'mayan.apps.unq',
+->    'adminsortable',
+->    'smart_selects'
+
+-------------------------------------------
+
+APPS->COMMON->URLS.PY
+agregar la url
+-> url(r'^chaining/', include('smart_selects.urls')) (donde esta la url del admin)
+
+------------------------------------------
+
+APPS->REST_API->URLS.PY
+-> cambiar la view de 'auth/token/obtain' por la CustomAuthToken que esta en unq->api_views->api_token.py
+
+------------------------------------------
+
+APPS->DOCUMENTS->(document_model y document_serializers)
+-> agregar el campo 'solicitud'
+
+------------------------------------------
+
+APPS->DOCUMENTS_COMMENT->(document_comment_model y document_comment_serializers)
+-> agregar el campo 'grupo_destino'
+
+------------------------------------------
+
+
+

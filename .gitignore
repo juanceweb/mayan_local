@@ -1,0 +1,239 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# mayan
+mayan/apps/acls
+mayan/apps/announcements
+mayan/apps/appearance
+mayan/apps/authentication
+mayan/apps/authentication_oidc
+mayan/apps/authentication_otp
+mayan/apps/autoadmin
+mayan/apps/backends
+mayan/apps/cabinets
+mayan/apps/checkouts
+#mayan/apps/common
+mayan/apps/converter
+mayan/apps/credentials
+mayan/apps/dashboards
+mayan/apps/databases
+mayan/apps/dependencies
+mayan/apps/django_gpg
+#mayan/apps/document_comments
+mayan/apps/document_downloads
+mayan/apps/document_exports
+mayan/apps/document_indexing
+mayan/apps/document_parsing
+#mayan/apps/documents
+mayan/apps/document_signatures
+mayan/apps/document_states
+mayan/apps/duplicates
+mayan/apps/dynamic_search
+mayan/apps/events
+mayan/apps/file_caching
+mayan/apps/file_metadata
+mayan/apps/linking
+mayan/apps/locales
+mayan/apps/lock_manager
+mayan/apps/logging
+mayan/apps/mailer
+mayan/apps/mayan_statistics
+mayan/apps/messaging
+mayan/apps/metadata
+mayan/apps/mime_types
+mayan/apps/mirroring
+mayan/apps/motd
+mayan/apps/navigation
+mayan/apps/ocr
+mayan/apps/organizations
+mayan/apps/permissions
+mayan/apps/platform
+mayan/apps/quotas
+mayan/apps/redactions
+#mayan/apps/rest_api
+mayan/apps/signature_captures
+mayan/apps/smart_settings
+mayan/apps/source_compressed
+mayan/apps/source_emails
+mayan/apps/source_generated_files
+mayan/apps/source_interactive
+mayan/apps/source_periodic
+mayan/apps/sources
+mayan/apps/source_sane_scanners
+mayan/apps/source_staging_folders
+mayan/apps/source_staging_storages
+mayan/apps/source_stored_files
+mayan/apps/source_watch_folders
+mayan/apps/source_watch_storages
+mayan/apps/source_web_forms
+mayan/apps/storage
+mayan/apps/tags
+mayan/apps/task_manager
+mayan/apps/templating
+mayan/apps/testing
+#mayan/apps/unq
+mayan/apps/user_management
+mayan/apps/views
+mayan/apps/web_links
+mayan/bin
+mayan/urls
+
+
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+#   For a library or package, you might want to ignore these files since the code is
+#   intended to run in multiple environments; otherwise, check them in:
+# .python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# poetry
+#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
+#   This is especially recommended for binary packages to ensure reproducibility, and is more
+#   commonly ignored for libraries.
+#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
+#poetry.lock
+
+# pdm
+#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
+#pdm.lock
+#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
+#   in version control.
+#   https://pdm.fming.dev/#use-with-ide
+.pdm.toml
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# PyCharm
+#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
+#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
+#  and can be added to the global gitignore or merged into this file.  For a more nuclear
+#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
+#.idea/
